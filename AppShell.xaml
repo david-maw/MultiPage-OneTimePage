@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MultiPage"
+             x:Class="MultiPage.AppShell"
+             Title="AppShell"
+             Shell.TabBarIsVisible="False"
+             BackgroundColor="White">
+    <TabBar>
+        <ShellContent Title="One Time Page" ContentTemplate="{DataTemplate local:OneTimePage}"/>
+        <ShellContent Title="Startup Page" ContentTemplate="{DataTemplate local:StartupPage}" Route="StartupPage"/>
+    </TabBar>
+    <ShellContent Title="Main Page" ContentTemplate="{DataTemplate local:MainPage}" Route="FirstPage"/>
+    <ShellContent Title="Page 1" ContentTemplate="{DataTemplate local:Page1}"/>
+    <ShellContent Title="Page 2" ContentTemplate="{DataTemplate local:Page2}"/>
+</Shell>
